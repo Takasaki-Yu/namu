@@ -5,71 +5,98 @@
     <meta charset="UTF-8">
     <style>
         a { 
-            color:lightblue;
-            text-decoration: none;
+            color:blue;
+            text-decoration:none;
+            font-weight:bold;
         }
-        #active {
-            color:red;
-        }
-        .saw {
-            color:orange;
-        }
-       
         h1 {
-            font-size:35px;
+            font-size:40px;
+            border-bottom:1px solid gray;
+            padding-bottom:30px;
+            margin-bottom:0;
+            text-align:center;
+        }
+        h2 {
+            border-bottom:1px solid gray;
+            padding-bottom:10px;
+            margin:0;
+        }
+        h4 {
+            margin:0;
+            padding-top:30px;
+            border-right:1px solid gray;
+            width:280px;
         }
         h5 {
             font-size:13px;
             text-align:center;
         }
-        ol li {
-            color:orchid;
+        #contents ol {
+            margin-top:0;
+            border-right:1px solid gray;
+            width:220px;
+            border-bottom:1px solid gray;
+            padding:30px
+        }
+        #grid {
+            display:grid;
+            grid-template-columns:280px 1fr;
+        }
+        #content {
+            padding:30px;
         }
     </style>
 </head>
 <body>
-<h1 style="margin-bottom:60px; text-decoration:underline;">누마즈시</h1>
-    <h4>목차</h4>
-    <ol>
-        <li>개요</li>
-        <li>역사</li>
-        <li>교통</li>
-        <li>경제</li>
-        <li>관광</li>
-        5. 1. <a href="https://namu.wiki/w/%EB%9F%AC%EB%B8%8C%20%EB%9D%BC%EC%9D%B4%EB%B8%8C!%20%EC%84%A0%EC%83%A4%EC%9D%B8!!" title="러브 라이브! 선샤인!!">러브 라이브! 선샤인!!</a> 관련
-        <li>기타</li>
-    </ol>
-<p style="text-align:center; font-style:normal; font-size:13px">
-    <img src="http://www.numazu-rs-hotel.com/eng/images/home/slideshow/02.jpg" style="width:100%;margin-top:50px"><br><br>
-    누마즈 시내
-</p>
-<p>
-    <h2 style="margin-top:50px">1. 개요</h2>
-    <a href="https://namu.wiki/w/%EC%8B%9C%EC%A6%88%EC%98%A4%EC%B9%B4%ED%98%84" title="시즈오카현" class="saw">시즈오카현</a>
-    동부에 위치한
-    <a href="https://namu.wiki/w/%ED%8A%B9%EB%A1%80%EC%8B%9C(%EC%9D%BC%EB%B3%B8)" title="특례시(일본)">특례시</a>.
-</p>
-<p style="margin-top:50px">
-    <h2>2. 역사</h2>
-    <p>
-    오래전부터 <a href="https://namu.wiki/w/%EC%88%98%EC%82%B0%EC%97%85" title="수산업">수산업</a>이 발달한
-    <a href="https://namu.wiki/w/%EC%96%B4%EC%B4%8C" title="어촌">어촌</a>
-    <a href="https://namu.wiki/w/%EB%8F%84%EC%8B%9C" title="도시">도시</a>이며,
-    <a href="https://namu.wiki/w/%EC%97%90%EB%8F%84%20%EC%8B%9C%EB%8C%80" title="에도 시대">에도 시대</a>에는
-    <a href="https://namu.wiki/w/%EB%8F%84%EC%B9%B4%EC%9D%B4%EB%8F%84" title="도카이도" class="saw">도카이도</a>의
-    <a href="https://namu.wiki/w/%EC%97%AD%EC%B0%B8" title="역참">역참</a>인 누마즈주쿠가 위치했던 곳이다.
-    </p>
-    <p style="margin-top:30px">
-    1854년 시모다에서 러시아 제국과의 화친 조약 체결 후
-    시모다항에 머물고 있던 러시아 해군 프리깃 디아나 함이 안세이 대지진으로 인해
-    헤다 앞바다에 침몰한 후 제정 러시아로의 귀국을 위해 현지의 목수와
-    러시아 해군 승조원들이 협력하여 서양식 범선을 건조하여 근대식 일본 함선을
-    제작하는 데 결정적인 역할을 한 장소이기도 하다. 이후 후술할 일본 해군의
-    시설들이 설치되며, 요코스카나 구레, 사세보, 마이즈루, 오미나토 같은 정도는
-    아니지만 나름대로 해군에 특화된 군사 도시로서의 성격도 지니게 된다.
-    <a href="https://namu.wiki/w/%EB%88%84%EB%A7%88%EC%A6%88%EC%8B%9C" title="누마즈시" class="saw" id="active">누마즈</a>가
-    포함된 시즈오카를 관할하는 해군구는 요코스카 진수부였다.
-    </p>
-</p>
+<h1 style="text-decoration:underline;">누마즈시</h1>
+<div id="grid">
+    <div id="contents">
+        <h4>목차</h4>
+        <ol>
+            <li>개요</li>
+            <li>역사</li>
+            <li>교통</li>
+            <li>경제</li>
+            <li>관광</li>
+            5. 1. <a href="https://namu.wiki/w/%EB%9F%AC%EB%B8%8C%20%EB%9D%BC%EC%9D%B4%EB%B8%8C!%20%EC%84%A0%EC%83%A4%EC%9D%B8!!" title="러브 라이브! 선샤인!!">러브 라이브! 선샤인!!</a> 관련
+            <li>기타</li>
+        </ol>
+    </div>
+    <div id="content">
+        <p style="text-align:center; font-style:normal; font-size:13px; margin-top:0;">
+        <img src="http://www.numazu-rs-hotel.com/eng/images/home/slideshow/02.jpg" style="width:100%;padding-bottom:15px"><br>
+        누마즈 시 야경
+        </p>
+        <p>
+            <h2 style="margin-top:50px">1. 개요</h2>
+            <p>
+            <a href="https://namu.wiki/w/%EC%8B%9C%EC%A6%88%EC%98%A4%EC%B9%B4%ED%98%84" title="시즈오카현">시즈오카현</a>
+            동부에 위치한
+            <a href="https://namu.wiki/w/%ED%8A%B9%EB%A1%80%EC%8B%9C(%EC%9D%BC%EB%B3%B8)" title="특례시(일본)">특례시</a>.
+            </p>
+        </p>
+        <p style="margin-top:50px">
+            <h2>2. 역사</h2>
+            <p>
+                오래전부터 <a href="https://namu.wiki/w/%EC%88%98%EC%82%B0%EC%97%85" title="수산업">수산업</a>이 발달한
+                <a href="https://namu.wiki/w/%EC%96%B4%EC%B4%8C" title="어촌">어촌</a>
+                <a href="https://namu.wiki/w/%EB%8F%84%EC%8B%9C" title="도시">도시</a>이며,
+                <a href="https://namu.wiki/w/%EC%97%90%EB%8F%84%20%EC%8B%9C%EB%8C%80" title="에도 시대">에도 시대</a>에는
+                <a href="https://namu.wiki/w/%EB%8F%84%EC%B9%B4%EC%9D%B4%EB%8F%84" title="도카이도">도카이도</a>의
+                <a href="https://namu.wiki/w/%EC%97%AD%EC%B0%B8" title="역참">역참</a>인 누마즈주쿠가 위치했던 곳이다.
+            </p>
+            <p style="margin-top:30px">
+                1854년 시모다에서 러시아 제국과의 화친 조약 체결 후
+                시모다항에 머물고 있던 러시아 해군 프리깃 디아나 함이 안세이 대지진으로 인해
+                헤다 앞바다에 침몰한 후 제정 러시아로의 귀국을 위해 현지의 목수와
+                러시아 해군 승조원들이 협력하여 서양식 범선을 건조하여 근대식 일본 함선을
+                제작하는 데 결정적인 역할을 한 장소이기도 하다. 이후 후술할 일본 해군의
+                시설들이 설치되며, 요코스카나 구레, 사세보, 마이즈루, 오미나토 같은 정도는
+                아니지만 나름대로 해군에 특화된 군사 도시로서의 성격도 지니게 된다.
+                누마즈가 포함된 시즈오카를 관할하는 해군구는 요코스카 진수부였다.
+            </p>
+        </p>
+    </div>
+</div>
 </body>
 </html>
