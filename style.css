@@ -1,0 +1,66 @@
+a { 
+    color:blue;
+    text-decoration:none;
+    font-weight:bold;
+}
+h1 {
+    font-size:40px;
+    border-bottom:1px solid gray;
+    padding-bottom:30px;
+    margin-bottom:0;
+    text-align:center;
+}
+h2 {
+    border-bottom:1px solid gray;
+    padding-bottom:10px;
+    margin:0;
+}
+h4 {
+    margin:0;
+    padding-top:30px;
+    width:280px;
+}
+h5 {
+    font-size:13px;
+    text-align:center;
+}
+/* id, class, 태그를
+    쉼표 없이 연속해서 쓰는 경우(ol li) : ol태그 아래 있는 모든 li태그에 적용
+    쉼표 넣고 연속해서 쓰는 경우(ol, li) : 모든 ol태그와 모든 li태그에 적용
+*/
+#contents ol {
+    margin-top:0;
+    width:220px;
+    padding:30px
+}
+#contents {
+    border-right:1px solid gray;
+}
+/* grid
+    display속성을 grid로 하면 화면 분할이 가능하다.
+    이때 grid-template-columns를 선택하면 좌우로 분할이고,
+    : 우측에는 각각의 분할된 템플릿의 너비를 적는다.
+*/
+#grid {
+    display:grid;
+    grid-template-columns:280px 1fr;
+}
+#content {
+    padding:30px;
+}
+/* mediaquery
+    mediaquery는 적응형 페이지를 만들 때 사용된다.
+    (화면 크기가 일정값 이상 혹은 이하일 때),
+    {grid 속성을 없애거나, 경계선을 없애거나} 하는 등 적응형 페이지를 만들 수 있다.
+*/
+@media(max-width:750px) {
+    #grid {
+    display:block;
+    }
+    #contents {
+    border-right:none;
+    }
+    h1 {
+    border-bottom:none;
+    }
+}
